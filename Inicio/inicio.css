@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Mi-';
+    src: url('Fuentes/BigBlueTermPlusNerdFontPropo-Regular.ttf') format('truetype');
+}
+
+/* Para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: Arial, sans-serif;
+  }
+}
+
+/* Para dispositivos de escritorio */
+@media only screen and (min-width: 601px) {
+  body {
+    font-family: 'Mi-', sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f; /* Color de fondo oscuro */
+  color: #ff0000; /* Color de texto rojo */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f; /* Color de fondo oscuro */
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Asegura que el encabezado esté encima de otros elementos */
+}
+
+.logo {
+  display: inline-block; /* Cambia a inline-block para alinear en línea horizontal */
+  vertical-align: middle; /* Alinea verticalmente los elementos */
+}
+
+.logo img {
+  vertical-align: middle; /* Alinea verticalmente la imagen */
+}
+
+.logo h1 {
+  margin-left: 10px; /* Espacio entre la imagen y el título */
+  display: inline-block; /* Permite que el título flote junto a la imagen */
+}
+
+/* Estilos para la información del creador */
+.inicio {
+  background-color: #1f1f1f;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.inicio h2 {
+  margin-top: 0;
+}
+
+.inicio p {
+  margin-bottom: 10px;
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.redes-sociales li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redes-sociales li:last-child {
+  margin-right: 0;
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  background-color: #2c2c2c; /* Color de fondo gris oscuro */
+  padding: 10px 0;
+  text-align: center;
+}
